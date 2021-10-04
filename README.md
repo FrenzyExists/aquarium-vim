@@ -37,7 +37,7 @@ The vimscript version currently have some support for a few plugins, bellow a li
 - [vim-airline](https://github.com/vim-airline/vim-airline)
 
 ### Variables n Stuff
-```vimscript
+```vim
 " Bold stuff
 let g:aqua_bold = 1 
 ```
@@ -45,7 +45,7 @@ let g:aqua_bold = 1
 ### Modes
 Aquarium now has Light Mode!
 
-```vimscript
+```vim
 " To enable Lightmode change the style variable:
 
 " options: "light", "dark"
@@ -53,7 +53,7 @@ let g:aquarium_style="dark"
 ```
 
 ### Airline
-```vimscript
+```vim
 " Airline has two themes :D
 
 " options:
