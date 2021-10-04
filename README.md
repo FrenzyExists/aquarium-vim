@@ -27,7 +27,6 @@ Plug 'frenzyexists/aquarium-vim', { 'branch': 'develop' }
 
 ```
 
-```
 ## Features and Stuff
 The vimscript version currently have some support for a few plugins, bellow a list of supported plugins:
 - [pandoc](https://github.com/jgm/pandoc)
