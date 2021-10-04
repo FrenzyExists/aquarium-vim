@@ -86,12 +86,13 @@ elseif s:configuration.style ==# 'light'
     " OTHER COLORS
     let s:gui08     = "#C34864"
     let s:gui09     = "#D66652"
+    let s:gui0A     = "#DE956F"
     let s:gui0B     = "#7D9685"
+    let s:gui0C     = "#829FB0"
     let s:gui0D     = "#6A8CBC"
     let s:gui0E     = "#8787BF"
     let s:gui0F     = "#E06B6B"
-    let s:gui0C     = "#829FB0" 
-    let s:gui0A     = "#DE956F" 
+
     
     " OTHER
     let s:linenr_bg = "#D5D4E0"
@@ -758,23 +759,6 @@ call s:hi("yamlKey", s:gui08, "", "", "", "italic", "")
 call s:hi("jediFunction", s:gui0E, s:gui02, "", "", "italic", "")
 call s:hi("jediFat", s:gui0C, s:gui02, "", "", "italic", "")
 
-" tree-sitter
-" > nvim-treesitter/nvim-treesitter
-hi! link TSAnnotation Annotation
-hi! link TSConstBuiltin Constant
-hi! link TSConstructor Function
-hi! link TSEmphasis Italic
-hi! link TSError Error
-hi! link TSFuncBuiltin Function
-hi! link TSFuncMacro Function
-hi! link TSStringRegex SpecialChar
-hi! link TSStrong Bold
-hi! link TSStructure Structure
-hi! link TSTagDelimiter TSTag
-hi! link TSUnderline Underline
-hi! link TSVariable Variable
-hi! link TSVariableBuiltin Keyword
-
 " Pandoc
 " > vim-pandoc/vim-pandoc-syntax
 call s:hi("pandocDefinitionBlockTerm", s:gui08, "", "", "", "italic", "")
@@ -800,70 +784,3 @@ hi! link pandocStrong markdownBold
 hi! link pandocTableHeaderWord pandocAtxHeader
 hi! link pandocUListItemBullet Operator
 
-" Nvim-Tree
-" > kyazdani42/nvim-tree.lua
-call s:hi("NvimTreeRootFolder", s:gui08, "", "", "", "italic", "")
-call s:hi("NvimTreeNormal", "", s:gui07, "", "", "", "")
-call s:hi("NvimTreeImageFile", s:gui0E, "NONE", "", "", "", "")
-call s:hi("NvimTreeExecFile",  s:gui04, "", "", "", "", "")
-call s:hi("NvimTreeVertSplit", s:gui00, "", "", "", "", "")
- 
-
-" Bufferline
-call s:hi("BufferLineFill", "", s:gui07, "", "", "", "")
-call s:hi("BufferLineSeparatorSelected", s:gui07, s:gui00, "", "", "", "")
-
-if s:configuration.style ==# 'dark'
-    call s:hi("BufferLineSeparatorVisible", s:gui07, s:gui01, "", "", "", "")
-    call s:hi("BufferLineSeparator", s:gui07, s:gui01, "", "", "", "")
-    call s:hi("BufferLineBackground", s:gui05, s:gui01, "", "", "", "")
-    call s:hi("BufferLineCloseButton", s:gui05, s:gui01, "", "", "", "")
-    call s:hi("BufferLineCloseButton", s:gui05, s:gui01, "", "", "", "")
-    call s:hi("BufferLineBufferVisible", s:gui05, s:gui01, "", "", "", "")
-    call s:hi("BufferLineCloseButtonVisible", s:gui05, s:gui01, "", "", "", "")
-    call s:hi("BufferLineModifiedVisible", s:gui05, s:gui01, "", "", "", "")
-    call s:hi("BufferLineModified", s:gui05, s:gui01, "", "", "", "")
-elseif s:configuration.style ==# 'light'
-    call s:hi("BufferLineSeparatorVisible", s:gui07, s:gui02, "", "", "", "")
-    call s:hi("BufferLineSeparator", s:gui07, s:gui02, "", "", "", "")
-    call s:hi("BufferLineBackground", s:gui05, s:gui02, "", "", "", "")
-    call s:hi("BufferLineCloseButton", s:gui05, s:gui02, "", "", "", "")
-    call s:hi("BufferLineCloseButton", s:gui05, s:gui02, "", "", "", "")
-    call s:hi("BufferLineBufferVisible", s:gui05, s:gui02, "", "", "", "")
-    call s:hi("BufferLineCloseButtonVisible", s:gui05, s:gui02, "", "", "", "")
-    call s:hi("BufferLineModifiedVisible", s:gui05, s:gui02, "", "", "", "")
-    call s:hi("BufferLineModified", s:gui05, s:gui02, "", "", "", "")
-endif
-
-call s:hi("BufferLineTabClose", s:gui08, s:gui01, "", "", "", "")
-call s:hi("BufferLineModifiedSelected", s:gui0C, s:gui00, "", "", "", "")
-
-
-" LSP Diagnostics
-" Errors
-call s:hi("LspDiagnosticsSignError", s:gui0E, "", "", "", "italic", "")
-call s:hi("LspDiagnosticsSignWarning", s:gui0A, "", "", "", "italic", "")
-call s:hi("LspDiagnosticsDefaultWarning", s:gui0A, "", "", "", "", "")
-call s:hi("LspDiagnosticsVirtualTextError", s:gui0E, "", "", "", "italic", "")
-call s:hi("LspDiagnosticsVirtualTextWarning", s:gui0A, "", "", "", "italic", "")
-
-" Info
-call s:hi("LspDiagnosticsSignInformation", s:gui0B, "", "", "", "italic", "")
-call s:hi("LspDiagnosticsVirtualTextInformation", s:gui0B, "", "", "", "italic", "")
-
-" Hints
-call s:hi("LspDiagnosticsSignHint", s:gui0E, "", "", "", "italic", "")
-call s:hi("LspDiagnosticsVirtualTextHint", s:gui0E, "", "", "", "italic", "")
-
-if execute(":echo has('nvim-0.5.0')")
-lua << EOF
-local function lspSymbol(name, icon)
-    vim.fn.sign_define("LspDiagnosticsSign" .. name, { text = icon, numhl = "LspDiagnosticsDefault" .. name })
-end
-
-lspSymbol("Error", "")
-lspSymbol("Information", "")
-lspSymbol("Hint", "")
-lspSymbol("Warning", "")
-EOF
-endif

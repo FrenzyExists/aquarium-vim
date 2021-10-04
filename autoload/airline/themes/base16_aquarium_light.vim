@@ -8,12 +8,12 @@ let g:airline#themes#base16_{s:scheme_slug}#palette = {}
 "--------------------"
 let s:gui00 = '#E6E6F1' " Default Background
 let s:gui01 = '#D5D4E0' " Lighter Background (Used for status bars, line number and folding marks)
-let s:gui02 = '#3D4059' " Selection Background
+let s:gui02 = '#E1E1EC' " Selection Background
 let s:gui03 = '#CCCBD9' " Comments, Invisibles, Line Highlighting
 let s:gui04 = '#7F8E9D' " Dark Foreground (Used for status bars)
 let s:gui05 = '#708190' " Default Foreground, Caret, Delimiters, Operators
 let s:gui06 = '#9CA6B9' " Light Foreground (Not often used)
-let s:gui07 = '#D9DBE6' " Light Background (Not often used)
+let s:gui07 = '#D7D7E2' " Light Background (Not often used)
 let s:gui08 = '#C34864' " Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted (red)
 let s:gui09 = '#D66652' " Integers, Boolean, Constants, XML Attributes, Markup Link Url (orange)
 let s:gui0A = '#DE956F' " Classes, Markup Bold, Search Text Background (yellow)
