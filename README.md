@@ -18,70 +18,48 @@
 Currently aquarium is at a very early stage, there's a large need for ports. At the time of this writting, you can visit [my dotfiles](https://github.com/FrenzyExists/dotfiles) for terminal configurations as well as my [tmux](https://github.com/FrenzyExists/dotfiles/blob/master/config/.tmux.conf) config, which is partly ripped from [Hi I'm Bored](https://github.com/shaunsingh).
 
 ## Getting Started
-Aquarium currently has a vimscript version only, expect a lua version soon!
 
 ### Quick Start
 
 * vim-plug
 ```vim
-Plug 'frenzyexists/aquarium-vim', { 'branch': 'vimscript_version' }
+Plug 'frenzyexists/aquarium-vim', { 'branch': 'develop' }
 
-" Future plans for lua version are around, somewhere, i hope
 ```
 
-* packer
-```lua
-use {
-    'frenzyexists/aquarium-vim',
-    branch = 'vimscript_version'
-}
 ```
 ## Features and Stuff
 The vimscript version currently have some support for a few plugins, bellow a list of supported plugins:
 - [pandoc](https://github.com/jgm/pandoc)
-- [Nvim-Treesitter](https://github.com/tree-sitter/tree-sitter)
 - [jedi](https://github.com/davidhalter/jedi)
 - [Vim Clap](https://github.com/liuchengxu/vim-clap/tree/master/test)
 - [fujitive.vim](https://github.com/tpope/vim-fugitive)
-- [lualine](https://github.com/hoob3rt/lualine.nvim)
-- [vim-airline]()
+- [vim-airline](https://github.com/vim-airline/vim-airline)
 
-To Enable `aquarium` theme for `Lualine`, specify the theme in your lua config:
-
-```lua
-require('lualine').setup {
-  options = {
-    theme = 'aquarium'
-    -- ... your lualine config
-  }
-}
-```
 ### Variables n Stuff
-```lua
-g.aqua_bold = 1 -- Bold stuff
+```vimscript
+" Bold stuff
+let g:aqua_bold = 1 
 ```
 
 ### Modes
 Aquarium now has Light Mode!
 
-```lua
--- To enable Lightmode change the style variable:
-local g = vim.g
+```vimscript
+" To enable Lightmode change the style variable:
 
--- options: "light", "dark"
-g.aquarium_style = "light"
-
+" options: "light", "dark"
+let g:aquarium_style="dark"
 ```
 
 ### Airline
-```lua
--- Airline has two themes :D
-local g = vim.g
+```vimscript
+" Airline has two themes :D
 
--- options:
---   base16_aquarium_light
---   base16_aquarium_dark
-g.airline_theme = "base16_aquarium_light"
+" options:
+"   base16_aquarium_light
+"   base16_aquarium_dark
+let g:airline_theme="base16_aquarium_light"
 ```
 
 ### Screenshots
