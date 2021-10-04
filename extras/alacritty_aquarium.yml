@@ -1,0 +1,149 @@
+# --| Frenzy's Alacritty |-- #
+
+# Using Aquarium
+
+# LIGHT - DARK
+#BG - #57718B or #C6D9DF
+# Implementation of Colors
+
+schemes:
+  aquarium_dark: &dark
+    primary:
+      background:        &aquarium_bg '#20202a'
+      foreground:        '#c8cedc'
+      bright_foreground: '#a0a8b6'
+      dim_foreground:    '#4c5664'
+    
+    cursor:
+      cursor: '#ebe3b9'
+      text: '#20202a'
+
+    vi_mode_cursor:
+      cursor: '#ebe3b9'
+
+    bright:
+      black:   '#3b3b4d'
+      red:     '#cc9b9d'
+      green:   '#a3ccad'
+      yellow:  '#d1ba97'
+      blue:    '#B8C9EA'
+      magenta: '#c497b3'
+      cyan:    '#95C2D1'
+      white:   '#63718b'
+
+    normal:
+      black:   '#3b3b4d'
+      red:     '#ebb9b9'
+      green:   '#caf6bb'
+      yellow:  '#ebe3b9'
+      blue:    '#cddbf9'
+      magenta: '#f6bbe7'
+      cyan:    '#b8dceb'
+      white:   '#c8cedc'  
+
+  aquarium_light: &light
+    primary:
+      background:        &aquarium_bg '#E6E6F1'
+      foreground:        '#708190'
+      bright_foreground: '#9CA6B9'
+      dim_foreground:    '#7F8E9D'
+    
+    cursor:
+      cursor: '#829FB0'
+
+    vi_mode_cursor:
+      cursor: '#6A8CBC'
+
+    bright:
+      black:   '#313449'
+      red:     '#B7435E'
+      green:   '#7e8f80'
+      yellow:  '#D88B72'
+      blue:    '#6E7EBF'
+      magenta: '#7170C2'
+      cyan:    '#728A9A'
+      white:   '#CCCBD9'
+
+    normal:
+      black:   '#313449'
+      red:     '#C34864'
+      green:   '#7D9685'
+      yellow:  '#DE956F'
+      blue:    '#6A8CBC'
+      magenta: '#8787BF'
+      cyan:    '#829FB0'
+      white:   '#D5D4E0'
+
+
+colors: 
+  *light
+
+scrolling:
+  history: 10000
+  multiplier: 100
+  faux_multiplier: 100
+  auto_scroll: true
+
+window:
+  dimensions:
+    columns: 100
+    lines: 100
+
+  padding:
+    x: 10
+    y: 10
+
+tabspaces: 4
+
+font:
+  normal:
+    family: Sauce Code Pro Nerd Font
+    style: Regular
+
+  italic:
+    family: Cartograph CF 
+    style: Italic
+    bold:
+      family: Cartograph CF 
+      style: Bold Italic
+        
+  size: 15
+  history: 10000
+  offset:
+    x: -1
+    y: 1
+  glyph_offset:
+    x: 0
+    y: 0
+
+env:
+  WINIT_X11_SCALE_FACTOR: '1.0'
+
+
+key_bindings:
+        - { key: V,        mods: Control,       action: Paste                   }
+        - { key: C,        mods: Control,       action: Copy                    }
+        - { key: Paste,                         action: Paste                   }
+        - { key: Copy,                          action: Copy                    }
+        - { key: Q,        mods: Alt,       action: Quit                        }
+        - { key: N,        mods: Alt,       action: SpawnNewInstance            }
+        - { key: Return,   mods: Control,       action: ToggleFullscreen        }
+        - { key: Equals,   mods: Control,       action: IncreaseFontSize        }
+        - { key: Minus, mods: Control,          action: DecreaseFontSize        }
+        - { key: S,        mods: Control|Shift, chars: "\x1b[83;5u"             }
+
+cursor:
+  style: underline
+
+mouse:
+        double_click: { threshold: 300 }
+        hide_when_typing: true
+
+selection:
+        semantic_escape_chars: ",│`|:\"' ()[]{}<>"
+
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }
+
+dynamic_title: false
+dynamic_padding: false
