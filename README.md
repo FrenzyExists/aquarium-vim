@@ -85,10 +85,19 @@ g.airline_theme = "base16_aquarium_light"
 ```
 
 ### Screenshots
-Here's a demo of how it looks on [NvChad](https://github.com/NvChad/NvChad)
-![](screenshots/nv_chad.png)
 
-Light Variant Colors Preview
+### Theme on PikaVim
+
+#### Aquarium-Dark
+![](screenshots/pika_vim-dark.png)
+
+#### Terminal View
+![](screenshots/preview-dark.png)
+
+#### Aquarium-Light
+![](screenshots/pika_vim-light.png)
+
+#### Terminal View
 ![](screenshots/preview-light.png)
 
 ### Pallete
