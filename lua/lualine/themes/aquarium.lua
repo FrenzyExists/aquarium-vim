@@ -23,8 +23,8 @@ return {
         c = {bg = colors.black4, fg = colors.grey2}
     },
     insert = {
-        a = {bg = colors.blue, fg = colors.black4, gui = 'bold'},
-        b = {bg = colors.green, fg = colors.black4},
+        a = {bg = colors.green, fg = colors.black4, gui = 'bold'},
+        b = {bg = colors.blue, fg = colors.black4},
         c = {bg = colors.black4, fg = colors.grey2}
     },
     visual = {
