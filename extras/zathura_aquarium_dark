@@ -1,0 +1,40 @@
+# Base16 Aquarium
+# Author: https://github.com/gdnand
+
+set notification-error-bg       "#20202a"
+set notification-error-fg       "#63718b"
+set notification-warning-bg     "#20202a"
+set notification-warning-fg     "#c34864"
+set notification-bg             "#20202a"
+set notification-fg             "#cddbf9"
+
+set completion-bg               "#20202a"
+set completion-fg               "#cddbf9"
+set completion-group-bg         "#313449"
+set completion-group-fg         "#cddbf9"
+set completion-highlight-bg     "#b8dceb"
+set completion-highlight-fg     "#313449"
+
+set index-bg                    "#20202a"
+set index-fg                    "#b1dba4"
+set index-active-bg             "#b1dba4"
+set index-active-fg             "#20202a"
+
+set inputbar-bg                 "#20202a"
+set inputbar-fg                 "#cddbf9"
+
+set statusbar-bg                "#313449"
+set statusbar-fg                "#cddbf9"
+
+set highlight-color             "#c8cca7"
+set highlight-active-color      "#eac1c1"
+
+set default-bg                  "#20202a"
+set default-fg                  "#cddbf9"
+set render-loading              "true"
+set render-loading-bg           "#20202a"
+set render-loading-fg           "#cddbf9"
+
+set recolor-lightcolor          "#20202a"
+set recolor-darkcolor           "#cddbf9"
+set recolor                     "true"
