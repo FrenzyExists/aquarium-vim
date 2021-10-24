@@ -91,6 +91,11 @@ let g:airline_theme="base16_aquarium_light"
     <img src="screenshots/palette.png" alt="Aquarium Palette"/>
 </p>
 
+## Other
+
+### Zathura
+![](screenshots/zathura-b.png)
+
 ## Contributing
 Aquarium is open-source, and will always be forever and ever.
 
