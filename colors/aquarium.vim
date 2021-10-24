@@ -119,6 +119,25 @@ if g:aqua_linenr == 0
     let s:linenr_bg = ""
 endif
 
+" Transparency thingy
+if !exists("g:aqua_transparency")
+    let g:aqua_transparency = 0
+endif
+
+if g:aqua_transparency == 0
+    let s:normal = s:gui00
+    let s:buff = s:gui00
+    let s:fold_col = s:gui00 
+    let s:sign_col = s:gui00 
+    let s:folded = s:gui07
+elseif g:aqua_transparency == 1
+    let s:normal = "NONE"
+    let s:buff = "NONE"
+    let s:folded = "NONE"
+    let s:fold_col = "NONE"
+    let s:sign_col = "NONE"
+endif
+
 
 " Function Loader thingy
 function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)
@@ -154,7 +173,7 @@ call s:hi("Underline", "", "", "", "", "underline", "")
 "+-+-+-+-+-+-+-+-+-+-+
 "+----- Editor ------+
 "+-+-+-+-+-+-+-+-+-+-+
-call s:hi("Normal", s:gui05, s:gui00, "NONE", "NONE", "", "")
+call s:hi("Normal", s:gui05, s:normal, "NONE", "NONE", "", "")
 call s:hi("Error", s:gui08, s:gui01, "", "", "italic", "")
 call s:hi("Search", s:gui0A, s:gui02, "", "", "", "") " Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
 call s:hi("MatchParen", s:gui0C, s:gui02, "", "", "", "")
@@ -175,9 +194,13 @@ call s:hi("PmenuSel", s:gui0C, s:gui01, "", "", "", "")
 call s:hi("PmenuThumb", s:gui0C, s:gui01, "", "", "", "")
 
 " Columns
-call s:hi("SignColumn", "", s:gui00, "NONE", "", "", "")
+call s:hi("SignColumn", s:gui0D, s:sign_col, "NONE", "", "", "")
 call s:hi("ColorColumn", "", s:gui01, "NONE", "", "", "")
 call s:hi("CursorColumn", s:gui0C, "", "NONE", "", "", "")
+
+" Folding
+call s:hi("FoldColumn", s:gui06, s:gui01, "NONE", "", "", "")
+call s:hi("Folded", s:gui02, s:folded, "NONE", "", "", "")
 
 " Cursor
 call s:hi("Cursor", s:cursor_bg, s:gui06, "NONE", "NONE", "", "") " Regular Cursor thing
@@ -267,7 +290,7 @@ hi! link asciidocURL markdownLinkText
 "+-+-+-+-+-+-+-+-+-+-+-+
 "+--- Prompt/Status ---+
 "+-+-+-+-+-+-+-+-+-+-+-+
-call s:hi("EndOfBuffer", s:gui00, "", "", "", "", "")
+call s:hi("EndOfBuffer", s:buff, "", "", "", "", "")
 call s:hi("ErrorMsg", s:gui08, s:gui00, "", "", "italic", "")
 call s:hi("ModeMsg", s:gui05, "", "", "", "", "")
 call s:hi("MoreMsg", s:gui0C, s:gui02, "", "", "", "")

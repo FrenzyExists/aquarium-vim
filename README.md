@@ -36,9 +36,16 @@ The vimscript version currently have some support for a few plugins, bellow a li
 - [vim-airline](https://github.com/vim-airline/vim-airline)
 
 ### Variables n Stuff
+
+Set Bold:
 ```vim
-" Bold stuff
+" On = 1 (default) | Off = 0
 let g:aqua_bold = 1 
+```
+Set Transparency
+```vim
+" On = 1 | Off = 0 (default)
+let g:aqua_transparency = 1 
 ```
 
 ### Modes
