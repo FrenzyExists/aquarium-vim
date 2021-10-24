@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 # Base16 Aquarium
 # Author: https://github.com/gdnand
 
+=======
+>>>>>>> babeb0a6bc84eaec799f1b8ec72254b07a9537b1
 set notification-error-bg       "#20202a"
 set notification-error-fg       "#63718b"
 set notification-warning-bg     "#20202a"
