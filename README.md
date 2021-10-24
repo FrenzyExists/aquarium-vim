@@ -34,6 +34,8 @@ The vimscript version currently have some support for a few plugins, bellow a li
 - [Vim Clap](https://github.com/liuchengxu/vim-clap/tree/master/test)
 - [fujitive.vim](https://github.com/tpope/vim-fugitive)
 - [vim-airline](https://github.com/vim-airline/vim-airline)
+- [lightline.vim](https://github.com/itchyny/lightline.vim)
+- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) _«requires neovim 5.0 or above»_
 
 ### Variables n Stuff
 
