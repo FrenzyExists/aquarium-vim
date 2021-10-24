@@ -807,3 +807,9 @@ hi! link pandocStrong markdownBold
 hi! link pandocTableHeaderWord pandocAtxHeader
 hi! link pandocUListItemBullet Operator
 
+" GitGutter
+" > airblade/vim-gitgutter
+call s:hi("GitGutterAdd", s:gui0B, "", "", "", "", "")
+call s:hi("GitGutterChange", s:gui0D, "", "", "", "", "")
+call s:hi("GitGutterDelete", s:gui08, "", "", "", "", "")
+call s:hi("GitGutterChangeDelete", s:gui0E, "", "", "", "", "")
