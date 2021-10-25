@@ -64,9 +64,9 @@ if s:configuration.style ==# 'dark'
     let s:gui0F     = "#EAC1C1"
 
     " OTHER
-    let s:linenr_bg = "#2C2E3E"
-    let s:linenr_fg = "#A7B7D6"
-    let s:cursor_bg = "#A7B7D6"
+    let s:linenr_bg = s:gui07
+    let s:linenr_fg = s:gui02
+    let s:cursor_bg = s:gui02
 
 elseif s:configuration.style ==# 'light'
 
@@ -74,7 +74,7 @@ elseif s:configuration.style ==# 'light'
     " Old BG -> #E6E6F1 #E1E3F2
     let s:gui00     = "#E6E6F1"
     let s:gui01     = "#D5D4E0"
-    let s:gui02     = "#e1e1ec"
+    let s:gui02     = "#E1E1EC"
     let s:gui03     = "#CCCBD9"
     let s:gui06     = "#9CA6B9"
     let s:gui07     = "#D7D7E2"
@@ -95,7 +95,7 @@ elseif s:configuration.style ==# 'light'
 
     
     " OTHER
-    let s:linenr_bg = "#D5D4E0"
+    let s:linenr_bg = s:gui01 
     let s:linenr_fg = "#414560"
     let s:cursor_bg = "#AFB5C6"
 endif
@@ -107,7 +107,7 @@ endif
  
 let s:line = "NONE"
 if g:aqua_line == 1
-    let s:line = s:gui01
+    let s:line = s:gui07
 endif
 
 " Focused line Number toggle
@@ -813,3 +813,4 @@ call s:hi("GitGutterAdd", s:gui0B, "", "", "", "", "")
 call s:hi("GitGutterChange", s:gui0D, "", "", "", "", "")
 call s:hi("GitGutterDelete", s:gui08, "", "", "", "", "")
 call s:hi("GitGutterChangeDelete", s:gui0E, "", "", "", "", "")
+highlight! link GitGutterChangeDelete PurpleSign
