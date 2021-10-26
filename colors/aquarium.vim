@@ -93,8 +93,9 @@ elseif s:configuration.style ==# 'light'
     let s:gui0E     = "#8787BF"
     let s:gui0F     = "#E06B6B"
 
+    
     " OTHER
-    let s:linenr_bg = s:gui01
+    let s:linenr_bg = s:gui01 
     let s:linenr_fg = "#414560"
     let s:cursor_bg = "#AFB5C6"
 endif
@@ -103,7 +104,7 @@ endif
 if !exists("g:aqua_line")
     let g:aqua_line = 0
 endif
-
+ 
 let s:line = "NONE"
 if g:aqua_line == 1
     let s:line = s:gui07
@@ -126,8 +127,8 @@ endif
 if g:aqua_transparency == 0
     let s:normal = s:gui00
     let s:buff = s:gui00
-    let s:fold_col = s:gui00
-    let s:sign_col = s:gui00
+    let s:fold_col = s:gui00 
+    let s:sign_col = s:gui00 
     let s:folded = s:gui07
 elseif g:aqua_transparency == 1
     let s:normal = "NONE"
@@ -813,58 +814,3 @@ call s:hi("GitGutterChange", s:gui0D, "", "", "", "", "")
 call s:hi("GitGutterDelete", s:gui08, "", "", "", "", "")
 call s:hi("GitGutterChangeDelete", s:gui0E, "", "", "", "", "")
 highlight! link GitGutterChangeDelete PurpleSign
-
-
-if has('nvim')
-    hi! link TSAnnotation PreProc
-    hi! link TSAttribute Macro
-    hi! link TSBoolean Boolean
-    hi! link TSCharacter Character
-    hi! link TSConditional Conditional
-    hi! link TSConstant Constant
-    hi! link TSConstBuiltin Constant
-    hi! link TSConstMacro Macro
-    hi! link TSMacro PreProc
-    hi! link TSConstructor Method
-    hi! link TSEmphasis Identifier
-    hi! link TSError Error
-    hi! link TSException Exception
-    hi! link TSFloat Float
-    hi! link TSFunction Function
-    hi! link TSFuncBuiltin Method
-    hi! link TSFuncMacro Function
-    hi! link TSInclude Include
-    hi! link TSKeyword Keyword
-    hi! link TSKeywordFunction Keyword
-    hi! link TSKeywordOperator Operator
-    hi! link TSLabel Label
-    hi! link TSLiteral Constant
-    hi! link TSMethod Method
-    hi! link TSNamespace Directory
-    hi! link TSNumber Number
-    hi! link TSOperator Operator
-    hi! link TSParameter Argument
-    hi! link TSParameterReference Arguement
-    hi! link TSProperty Method
-    hi! link TSPunctBracket Delimiter
-    hi! link TSPunctDelimiter Delimiter
-    hi! link TSPunctSpecial Delimiter
-    hi! link TSRepeat Repeat
-    hi! link TSString String
-    hi! link TSStringEscape Delimiter
-    hi! link TSStringRegex String
-    hi! link TSStrong Bold
-    hi! link TSStructure Structure
-    hi! link TSTag Keyword
-    hi! link TSTagDelimiter Delimiter
-    hi! link TSText String
-    hi! link TSTitle Identifier
-    hi! link TSType Type
-    hi! link TSTypeBuiltin Type
-    hi! link TSUnderline Underlined
-    hi! link TSURI Underlined
-    hi! link TSVariable Text
-    hi! link TSVariableBuiltin VariableBuiltin
-    hi! link TSField Property
-    hi! link pythonTSField NormalText
-end
