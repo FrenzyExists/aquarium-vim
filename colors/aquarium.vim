@@ -215,7 +215,7 @@ call s:hi("CursorLineNr", s:linenr_fg, s:linenr_bg, "NONE", "", "NONE", "") " Ch
 "+-- Lang Specifics aka Fallbacks ---+
 "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 call s:hi("PreProc", s:gui0E, "", "", "", "", "")
-call s:hi("Todo", s:gui0E, s:gui02, "", "", s:bold, "") " anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+call s:hi("Todo", s:gui0E, s:gui01, "", "", s:bold, "") " anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 call s:hi("Boolean", s:gui09, "", "", "", "", "") " a boolean constant: TRUE, false
 call s:hi("Type", s:gui0A, "", "", "", "italic", "" ) " int, long, char, etc.
 call s:hi("Function", s:gui0C, "", "", "", "italic", "") " a floating point constant: 2.3e10
