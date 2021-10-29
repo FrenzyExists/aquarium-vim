@@ -814,7 +814,6 @@ call s:hi("GitGutterDelete", s:gui08, "", "", "", "", "")
 call s:hi("GitGutterChangeDelete", s:gui0E, "", "", "", "", "")
 highlight! link GitGutterChangeDelete PurpleSign
 
-
 if has('nvim')
     hi! link TSAnnotation PreProc
     hi! link TSAttribute Macro
