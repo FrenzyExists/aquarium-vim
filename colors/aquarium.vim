@@ -866,6 +866,6 @@ if has('nvim')
     hi! link TSTypeBuiltin TypeBuiltin
     hi! link TSUnderline Underlined
     hi! link TSURI URL
-    hi! link TSVariable TreeSitterVariable
-    hi! link TSVariableBuiltin Variable
+    hi! link TSVariable Variable
+    hi! link TSVariableBuiltin TreeSitterVariable
 end
