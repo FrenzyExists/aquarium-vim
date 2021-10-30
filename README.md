@@ -36,6 +36,7 @@ The vimscript version currently have some support for a few plugins, bellow a li
 - [vim-airline](https://github.com/vim-airline/vim-airline)
 - [lightline.vim](https://github.com/itchyny/lightline.vim)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) _«requires neovim 5.0 or above»_
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) _«requires neovim 5.0 or above»_
 
 ### Variables n Stuff
 
