@@ -835,6 +835,7 @@ if has('nvim')
     hi! link TSEmphasis Emphasis
     hi! link TSError Error
     hi! link TSException Exception
+    hi! link TSFloat Float
     hi! link TSField Field
     hi! link TSFunction Function
     hi! link TSFuncBuiltin FunctionBuiltin
