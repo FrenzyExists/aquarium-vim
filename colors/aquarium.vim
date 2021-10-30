@@ -42,13 +42,13 @@ if s:configuration.style ==# 'dark'
 
     " BASE BG
     let s:gui00     = "#20202A"
-    let s:gui01     = "#2c2e3e"
+    let s:gui01     = "#2C2E3E"
     let s:gui02     = "#A7B7D6"
     let s:gui03     = "#3D4059"
 
     " BASE FG
     let s:gui04     = "#C6D0E9"
-    let s:gui05     = "#63718b"
+    let s:gui05     = "#63718B"
 
     let s:gui06     = "#313449"
     let s:gui07     = "#1A1A24"
@@ -815,26 +815,32 @@ call s:hi("GitGutterChangeDelete", s:gui0E, "", "", "", "", "")
 highlight! link GitGutterChangeDelete PurpleSign
 
 if has('nvim')
+    call s:hi("Constructor", s:gui02, "", "", "", "", "")
+    call s:hi("Emphasis", s:gui02, "", "", "", "", "")
+    call s:hi("Field", s:gui0B, "", "", "", "", "")
+    call s:hi("FunctionBuiltin", s:gui0D, "", "", "", "", "")
+    call s:hi("FuncMacro", s:gui0E, "", "", "", "", "")
+    call s:hi("Method", s:gui0B, "", "", "", "", "")
+    call s:hi("Parameter", s:gui09, "", "", "", "", "")
+    call s:hi("TypeBuiltin", s:gui0F, "", "", "", "", "")
+    call s:hi("TreeSitterVariable", s:gui0B, "", "", "", "", "")
     hi! link TSAnnotation PreProc
-    hi! link TSAttribute Macro
+    hi! link TSAttribute Decorator
     hi! link TSBoolean Boolean
     hi! link TSCharacter Character
     hi! link TSConditional Conditional
     hi! link TSConstant Constant
-    hi! link TSConstBuiltin Constant
-    hi! link TSConstMacro Macro
-    hi! link TSMacro PreProc
-    hi! link TSConstructor Method
-    hi! link TSEmphasis Identifier
+    hi! link TSConstBuiltin Structure
+    hi! link TSConstructor Constructor
+    hi! link TSEmphasis Emphasis
     hi! link TSError Error
     hi! link TSException Exception
-    hi! link TSFloat Float
+    hi! link TSField Field
     hi! link TSFunction Function
-    hi! link TSFuncBuiltin Method
-    hi! link TSFuncMacro Function
-    hi! link TSInclude Include
+    hi! link TSFuncBuiltin FunctionBuiltin
+    hi! link TSFuncMacro FuncMacro " FuncMacro is mostly used in rust
     hi! link TSKeyword Keyword
-    hi! link TSKeywordFunction Keyword
+    hi! link TSKeywordFunction Function
     hi! link TSKeywordOperator Operator
     hi! link TSLabel Label
     hi! link TSLiteral Constant
@@ -842,28 +848,23 @@ if has('nvim')
     hi! link TSNamespace Directory
     hi! link TSNumber Number
     hi! link TSOperator Operator
-    hi! link TSParameter Argument
-    hi! link TSParameterReference Arguement
-    hi! link TSProperty Method
+    hi! link TSParameter Parameter
     hi! link TSPunctBracket Delimiter
     hi! link TSPunctDelimiter Delimiter
-    hi! link TSPunctSpecial Delimiter
+    hi! link TSPunctSpecial DelimterAlt
     hi! link TSRepeat Repeat
     hi! link TSString String
-    hi! link TSStringEscape Delimiter
+    hi! link TSStringEscape SpecialKey
     hi! link TSStringRegex String
     hi! link TSStrong Bold
     hi! link TSStructure Structure
     hi! link TSTag Keyword
     hi! link TSTagDelimiter Delimiter
     hi! link TSText String
-    hi! link TSTitle Identifier
     hi! link TSType Type
-    hi! link TSTypeBuiltin Type
+    hi! link TSTypeBuiltin TypeBuiltin
     hi! link TSUnderline Underlined
-    hi! link TSURI Underlined
-    hi! link TSVariable Text
-    hi! link TSVariableBuiltin VariableBuiltin
-    hi! link TSField Property
-    hi! link pythonTSField NormalText
+    hi! link TSURI URL
+    hi! link TSVariable TreeSitterVariable
+    hi! link TSVariableBuiltin Variable
 end
