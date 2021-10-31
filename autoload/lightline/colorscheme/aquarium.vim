@@ -96,4 +96,3 @@ let s:p.normal.error = [ [ s:gui00, s:gui0F ] ]
 let s:p.normal.warning = [ [ s:gui00, s:gui0A ] ]
 
 let g:lightline#colorscheme#aquarium#palette = lightline#colorscheme#flatten(s:p)
-et g:lightline#colorscheme#aquarium#palette = lightline#colorscheme#flatten(s:p)
