@@ -106,9 +106,8 @@ Other ways you can contribute is by adding a config of your favorite program usi
 
 ### To-do list
 - [x] Add Scheme switch script
-- [ ] Glorify theme
-- [ ] Add Mish Theme
-- [ ] Profit (hehe)
+- [x] Add Mish Theme
+- [ ] Add Mish to Lightline, Lualine and Airline
 
 <p align="center">
     <a href="https://github.com/frenzyexists/aquarium-vim/blob/main/LICENSE">
