@@ -97,6 +97,36 @@ elseif s:configuration.style ==# 'light'
     let s:linenr_bg = s:gui01
     let s:linenr_fg = "#414560"
     let s:cursor_bg = "#AFB5C6"
+elseif s:configuration.style ==# 'mish'
+
+    " BASE BG
+    let s:gui00     = "#292B2F"
+    let s:gui01     = "#36393F"
+
+    let s:gui02     = "#97A1AF"
+    let s:gui03     = "#4D5664"
+
+    " BASE FG
+    let s:gui04     = "#C8D0DA"
+    let s:gui05     = "#DCE4EE"
+
+    let s:gui06     = "#44484F"
+    let s:gui07     = "#1F2025"
+
+    " OTHER COLORS
+    let s:gui08     = "#EBB9B9"
+    let s:gui09     = "#EBD1B9"
+    let s:gui0A     = "#EBE3B9"
+    let s:gui0B     = "#C2EBB9"
+    let s:gui0C     = "#B9DEEB"
+    let s:gui0D     = "#B9CAEB"
+    let s:gui0E     = "#D9B9EB"
+    let s:gui0F     = "#EBB9D9"
+
+    " OTHER
+    let s:linenr_bg = s:gui07
+    let s:linenr_fg = s:gui02
+    let s:cursor_bg = s:gui02
 endif
 
 " Focused line toggle
