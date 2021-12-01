@@ -911,10 +911,11 @@ if has('nvim')
     call s:hi("link NvimTreeImageFile", s:gui0E, "", "", "", "", "")
     call s:hi("NvimTreeRootFolder", s:gui0C, "", "", "", "italic", "")
     call s:hi("NvimTreeFolderName", s:gui02, "", "", "", "", "")
+    call s:hi("NvimTreeFolderNormal", "", s:gui07, "", "", "", "")
 
     hi! link LspDiagnosticsError Error
     hi! link LspDiagnosticsWarning healthWarning
-    hi! link LspDiagnosticsInformation
+    hi! link LspDiagnosticsInformation NvimTreeSpecialFile
     hi! link LspDiagnosticsHint Label
 
     call s:hi("NvimTreeGitDirty", s:gui08, "", "", "", "underline", "")
