@@ -905,6 +905,28 @@ if has('nvim')
     " NvimTree
     " >  kyazdani42/nvim-tree.lua
     call s:hi("NvimTreeExecFile", s:gui0B, "", "", "", "", "")
+    call s:hi("NvimTreeOpenedFile", s:gui0A, "", "", "", "bold", "")
+    call s:hi("NvimTreeSpecialFile", s:gui09, "", "", "", "italic", "")
+    call s:hi("NvimTreeMarkdownFile", s:gui09, "", "", "", "", "")
+    call s:hi("NvimTreeImageFile", s:gui0E, "", "", "", "", "")
+    call s:hi("NvimTreeRootFolder", s:gui0C, "", "", "", "italic", "")
+    call s:hi("NvimTreeFolderName", s:gui02, "", "", "", "", "")
+    call s:hi("NvimTreeFolderNormal", "", s:gui07, "", "", "", "")
+
+    hi! link LspDiagnosticsError Error
+    hi! link LspDiagnosticsWarning healthWarning
+    hi! link LspDiagnosticsInformation NvimTreeSpecialFile
+    hi! link LspDiagnosticsHint Label
+
+    call s:hi("NvimTreeGitDirty", s:gui08, "", "", "", "underline", "")
+    call s:hi("NvimTreeGitStaged", s:gui0B, "", "", "", "", "")
+    call s:hi("NvimTreeGitMerge", s:gui0C, "", "", "", "", "")
+
+    hi! link NvimTreeGitRenamed GitGutterChange
+    hi! link NvimTreeGitNew GitGutterAdd
+    hi! link NvimTreeGitDeleted GitGutterDelete
+
+    call s:hi("NvimTreeWindowPicker", s:gui03, "", "", "", "", "")
 
 end
 
