@@ -33,6 +33,7 @@ The vimscript version currently have some support for a few plugins, bellow a li
 - [jedi](https://github.com/davidhalter/jedi)
 - [Vim Clap](https://github.com/liuchengxu/vim-clap/tree/master/test)
 - [fujitive.vim](https://github.com/tpope/vim-fugitive)
+- [vim-sneak](https://github.com/justinmk/vim-sneak)
 - [vim-airline](https://github.com/vim-airline/vim-airline)
 - [lightline.vim](https://github.com/itchyny/lightline.vim)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) _«requires neovim 5.0 or above»_

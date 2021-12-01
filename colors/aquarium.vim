@@ -844,6 +844,13 @@ call s:hi("GitGutterDelete", s:gui08, "", "", "", "", "")
 call s:hi("GitGutterChangeDelete", s:gui0E, "", "", "", "", "")
 highlight! link GitGutterChangeDelete PurpleSign
 
+" Vim Sneak
+" > justinmk/vim-sneak
+call s:hi("Sneak", s:gui09, s:gui07, "", "", "", "")
+call s:hi("SneakMask", s:gui09, s:gui07, "", "", "", "")
+call s:hi("SneakLabel", s:gui07, s:gui07, "", "", "", "")
+call s:hi("SneakScope", s:gui0B, s:gui07, "", "", "", "")
+
 if has('nvim')
 
     " Treesitter
