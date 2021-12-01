@@ -236,7 +236,7 @@ call s:hi("Cursor", s:cursor_bg, s:gui06, "NONE", "NONE", "", "") " Regular Curs
 call s:hi("CursorIM", s:gui02, s:gui06, "", "NONE", "", "") " like Cursor, but used when in IME mode
 call s:hi("iCursor", s:cursor_bg, s:gui06, "", "NONE", "", "")
 
-" Line Stuff 
+" Line Stuff
 call s:hi("LineNr", s:gui03, s:gui00, "", "", "bold", "") " The Number Columns
 call s:hi("CursorLine", "", s:line, "NONE", "", "NONE", "") " Changes the color focused line where the cursor is
 call s:hi("CursorLineNr", s:linenr_fg, s:linenr_bg, "NONE", "", "NONE", "") " Changes the color focused column number where the cursor is
@@ -285,7 +285,7 @@ hi! link Variable Identifier
 "+--- Window Highlight --+
 "+-+-+-+-+-+-+-+-+-+-+-+-+
 call s:hi("VertSplit", s:gui01, s:gui00, "", "NONE", s:bold, "")
-call s:hi("StatusLine", s:gui00, s:gui00, "", "", "", "") " status line of current window
+call s:hi("StatusLine", s:gui00, s:gui03, "", "", "", "") " status line of current window
 call s:hi("StatusLineNC", s:gui01, s:gui00, "", "", "underline", "") "status lines of not-current windows Note: if this is equal to 'StatusLine' Vim will use '^^^' in the status line of the current window.
 call s:hi("StatusLineTerm", s:gui05, s:gui00, "", "", "", "" ) " status line of current :terminal window
 call s:hi("StatusLineTermNC", s:gui06, s:gui00, "", "", "underline", "") " status line of non-current :terminal window
@@ -845,6 +845,9 @@ call s:hi("GitGutterChangeDelete", s:gui0E, "", "", "", "", "")
 highlight! link GitGutterChangeDelete PurpleSign
 
 if has('nvim')
+
+    " Treesitter
+    " > nvim-treesitter/nvim-treesitter
     call s:hi("Constructor", s:gui02, "", "", "", "", "")
     call s:hi("Emphasis", s:gui02, "", "", "", "", "")
     call s:hi("Field", s:gui0B, "", "", "", "", "")
@@ -898,4 +901,30 @@ if has('nvim')
     hi! link TSURI URL
     hi! link TSVariable Variable
     hi! link TSVariableBuiltin TreeSitterVariable
+
+    " NvimTree
+    " >  kyazdani42/nvim-tree.lua
+    call s:hi("NvimTreeExecFile", s:gui0B, "", "", "", "", "")
+    call s:hi("NvimTreeOpenedFile", s:gui0A, "", "", "", "bold", "")
+    call s:hi("NvimTreeSpecialFile", s:gui09, "", "", "", "italic", "")
+    call s:hi("NvimTreeMarkdownFile", s:gui09, "", "", "", "", "")
+    call s:hi("link NvimTreeImageFile", s:gui0E, "", "", "", "", "")
+    call s:hi("NvimTreeRootFolder", s:gui0C, "", "", "", "italic", "")
+    call s:hi("NvimTreeFolderName", s:gui02, "", "", "", "", "")
+
+    hi! link LspDiagnosticsError Error
+    hi! link LspDiagnosticsWarning healthWarning
+    hi! link LspDiagnosticsInformation
+    hi! link LspDiagnosticsHint Label
+
+    call s:hi("NvimTreeGitDirty", s:gui08, "", "", "", "underline", "")
+    call s:hi("NvimTreeGitStaged", s:gui0B, "", "", "", "", "")
+    call s:hi("NvimTreeGitMerge", s:gui0C, "", "", "", "", "")
+
+    hi! link NvimTreeGitRenamed GitGutterChange
+    hi! link NvimTreeGitNew GitGutterAdd
+    hi! link NvimTreeGitDeleted GitGutterDelete
+
+    call s:hi("NvimTreeWindowPicker", s:gui03, "", "", "", "", "")
 end
+

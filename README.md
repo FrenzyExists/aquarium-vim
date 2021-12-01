@@ -6,7 +6,7 @@
 </p>
 <p align="center">
     <a href="https://github.com/FrenzyExists/aquarium-vim/stargazers"><img src="https://img.shields.io/github/stars/FrenzyExists/aquarium-vim?colorA=20202a&colorB=cddbf9&style=for-the-badge&logo=starship style=flat-square"></a>
-    <a href="https://github.com/FrenzyExists/aquarium-vim/releases/latest"><img src="https://img.shields.io/github/release/FrenzyExists/aquarium-vim.svg?&style=for-the-badge&label=Release&logo=github&logoColor=eceff4&colorA=20202a&colorB=f6bbe7"/></a> 
+    <a href="https://github.com/FrenzyExists/aquarium-vim/releases/latest"><img src="https://img.shields.io/github/release/FrenzyExists/aquarium-vim.svg?&style=for-the-badge&label=Release&logo=github&logoColor=eceff4&colorA=20202a&colorB=f6bbe7"/></a>
     <a href="https://github.com/FrenzyExists/aquarium-vim/issues"><img src="https://img.shields.io/github/issues/FrenzyExists/aquarium-vim?colorA=20202a&colorB=e6dfb8&style=for-the-badge&logo=bugatti"></a>
     <a href="https://github.com/FrenzyExists/aquarium-vim/network/members"><img src="https://img.shields.io/github/forks/FrenzyExists/aquarium-vim?colorA=20202a&colorB=ebb9b9&style=for-the-badge&logo=github"></a>
 </p>
@@ -37,18 +37,19 @@ The vimscript version currently have some support for a few plugins, bellow a li
 - [lightline.vim](https://github.com/itchyny/lightline.vim)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) _«requires neovim 5.0 or above»_
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) _«requires neovim 5.0 or above»_
+- [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua) _«requires neovim 5.0 or above»_
 
 ### Variables n Stuff
 
 Set Bold:
 ```vim
 " On = 1 (default) | Off = 0
-let g:aqua_bold = 1 
+let g:aqua_bold = 1
 ```
 Set Transparency
 ```vim
 " On = 1 | Off = 0 (default)
-let g:aqua_transparency = 1 
+let g:aqua_transparency = 1
 ```
 
 ### Modes
