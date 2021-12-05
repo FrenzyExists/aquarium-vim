@@ -15,9 +15,9 @@
 
 <p align="center">A colorful, dark cozy <a href="https://github.com/neovim/neovim">Neovim</a> colorscheme.</p>
 
-Aquarium is finally maturing! I really don't know what else to improve anymore.
+<br/>
 
-Terminal configurations are available both here and on [my dotfiles](https://github.com/FrenzyExists/dotfiles). You can also find my [tmux](https://github.com/FrenzyExists/dotfiles/blob/master/config/.tmux.conf) config, which is partly ripped from [Hi I'm Bored](https://github.com/shaunsingh).
+Terminal configurations are in [extras](https://github.com/FrenzyExists/aquarium-vim/tree/develop/extras) and at [my dotfiles](https://github.com/FrenzyExists/dotfiles), includes my [tmux](https://github.com/FrenzyExists/dotfiles/blob/master/config/.tmux.conf) config, partly ripped from [Hi I'm Bored](https://github.com/shaunsingh).
 
 ## Getting Started
 
@@ -111,16 +111,11 @@ let g:airline_theme="base16_aquarium_light"
 ![](screenshots/zathura-b.png)
 
 ## Contributing
-Aquarium is open-source, and will always be forever and ever.
+Aquarium is open-source, **Forever**
 
-There's a lot of ways to contribute, creating ports in particular. For example, you could submit a [pull request](https://github.com/frenzyexists/aquarium-vim/pulls) a [suggestion/enchantment](https://github.com/frenzyexists/aquarium-vim/issues) for this color theme.
+You could submit a [pull request](https://github.com/frenzyexists/aquarium-vim/pulls) or a [suggestion/enchantment](https://github.com/frenzyexists/aquarium-vim/issues) for this color theme.
 
-Other ways you can contribute is by adding a config of your favorite program using aquarium colors over [here](https://github.com/FrenzyExists/dotfiles).
-
-### To-do list
-- [x] Add Scheme switch script
-- [x] Add Mish Theme
-- [ ] Add Mish to Lightline, Lualine and Airline
+you can also add a onfig of your favorite program using aquarium colors over [here](https://github.com/FrenzyExists/dotfiles).
 
 <p align="center">
     <a href="https://github.com/frenzyexists/aquarium-vim/blob/main/LICENSE">
