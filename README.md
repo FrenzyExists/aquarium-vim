@@ -15,7 +15,9 @@
 
 <p align="center">A colorful, dark cozy <a href="https://github.com/neovim/neovim">Neovim</a> colorscheme.</p>
 
-Currently aquarium is at a very early stage, there's a large need for ports. At the time of this writting, you can visit [my dotfiles](https://github.com/FrenzyExists/dotfiles) for terminal configurations as well as my [tmux](https://github.com/FrenzyExists/dotfiles/blob/master/config/.tmux.conf) config, which is partly ripped from [Hi I'm Bored](https://github.com/shaunsingh).
+Aquarium is finally maturing! I really don't know what else to improve anymore.
+
+Terminal configurations are available both here and on [my dotfiles](https://github.com/FrenzyExists/dotfiles). You can also find my [tmux](https://github.com/FrenzyExists/dotfiles/blob/master/config/.tmux.conf) config, which is partly ripped from [Hi I'm Bored](https://github.com/shaunsingh).
 
 ## Getting Started
 
@@ -24,7 +26,16 @@ Currently aquarium is at a very early stage, there's a large need for ports. At 
 * vim-plug
 ```vim
 Plug 'frenzyexists/aquarium-vim', { 'branch': 'develop' }
+```
 
+* packer
+```lua
+use 'frenzyexists/aquarium-vim'
+```
+
+* deim.vim
+```vim
+call dein#add('frenzyexists/aquarium-vim')
 ```
 
 ## Features and Stuff

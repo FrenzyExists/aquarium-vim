@@ -1,5 +1,5 @@
-" Aquarium Theme
-" Name:       aquarium-vim
+" Project: Aquarium Theme
+" Name: aquarium-vim
 " Maintainer: https://github.com/frenzyexists/aquarium-vim/
 " License: The MIT License (MIT)
 
@@ -225,7 +225,7 @@ call s:hi("PmenuThumb", s:gui0C, s:gui01, "", "", "", "")
 " Columns
 call s:hi("SignColumn", s:gui0D, s:sign_col, "NONE", "", "", "")
 call s:hi("ColorColumn", "", s:gui01, "NONE", "", "", "")
-call s:hi("CursorColumn", s:gui0C, "", "NONE", "", "", "")
+call s:hi("CursorColumn", s:gui0C, s:gui00, "NONE", "", "", "")
 
 " Folding
 call s:hi("FoldColumn", s:gui06, s:gui01, "NONE", "", "", "")
@@ -369,7 +369,7 @@ call s:hi("SpellBad", s:gui08, s:gui01, "", "", "undercurl", "")
 " Word that should start with a capital. This will be combined with the highlighting used otherwise.
 call s:hi("SpellCap", s:gui0A, s:gui01, "", "", "undercurl", "")
 " Word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.
-call s:hi("SpellLocal", s:gui0C, s:gui01, "", "", "undercurl", "")
+call s:hi("SpellLocal", s:gui09, s:gui01, "", "", "undercurl", "")
 " Word that is recognized by the spellchecker as one that is hardly ever used. spell This will be combined with the highlighting used otherwise.
 call s:hi("SpellRare", s:gui0D, s:gui01, "", "", "undercurl", "")
 
