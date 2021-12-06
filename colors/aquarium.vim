@@ -44,7 +44,7 @@ if s:configuration.style ==# 'dark'
     let s:gui00     = "#20202A"
     let s:gui01     = "#2C2E3E"
     let s:gui02     = "#A7B7D6"
-    let s:gui03     = "#3D4059"
+    let s:gui03     = "#44495E"
 
     " BASE FG
     let s:gui04     = "#C6D0E9"
