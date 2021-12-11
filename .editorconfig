@@ -1,0 +1,37 @@
+
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
+# EditorConfig is awesome: https://EditorConfig.org
+
+root = true
+
+
+[*]
+end_of_line = lf
+charset = utf-8
+insert_final_newline = true
+insert_final_newline = true
+indent_style = tabs
+indent_size = 4
+spaces_around_operators = hybrid
+
+
+[*.py]
+spaces_around_brackets = both
+max_line_length = 80
+
+[*.rs]
+spaces_around_brackets = outside
+max_line_length = 80
+
+[*.java]
+spaces_around_brackets = outside
+max_line_length = 80
+
+[*.txt]
+indent_style = tab
+indent_size = 4
+
+[*.{diff,md}]
+trim_trailing_whitespace = false
+
