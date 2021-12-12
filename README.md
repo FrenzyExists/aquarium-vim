@@ -38,7 +38,7 @@ use 'frenzyexists/aquarium-vim'
 call dein#add('frenzyexists/aquarium-vim')
 ```
 
-## Features and Stuff
+## Features 🎁
 The vimscript version currently have some support for a few plugins, bellow a list of supported plugins:
 - [pandoc](https://github.com/jgm/pandoc)
 - [jedi](https://github.com/davidhalter/jedi)
@@ -51,7 +51,7 @@ The vimscript version currently have some support for a few plugins, bellow a li
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) _«requires neovim 5.0 or above»_
 - [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua) _«requires neovim 5.0 or above»_
 
-### Variables n Stuff
+### Variables 🎯
 
 Set Bold:
 ```vim
@@ -64,7 +64,7 @@ Set Transparency
 let g:aqua_transparency = 1
 ```
 
-### Modes
+### Modes 🧰
 Aquarium now has Light Mode!
 
 ```vim
@@ -74,7 +74,7 @@ Aquarium now has Light Mode!
 let g:aquarium_style="dark"
 ```
 
-### Airline
+### Airline ✈️
 ```vim
 " Airline has two themes :D
 
@@ -84,7 +84,7 @@ let g:aquarium_style="dark"
 let g:airline_theme="base16_aquarium_light"
 ```
 
-### Screenshots
+### Screenshots 🖼️
 
 ### Theme on PikaVim
 
@@ -100,17 +100,17 @@ let g:airline_theme="base16_aquarium_light"
 #### Terminal View
 ![](screenshots/preview-light.png)
 
-### Pallete
+### Pallete 🎨
 <p align="center">
     <img src="screenshots/palette.png" alt="Aquarium Palette"/>
 </p>
 
 ## Other
 
-### Zathura
+### Zathura 📖
 ![](screenshots/zathura-b.png)
 
-## Contributing
+## Contributing 🚧
 Aquarium is open-source, **Forever**
 
 You could submit a [pull request](https://github.com/frenzyexists/aquarium-vim/pulls) or a [suggestion/enchantment](https://github.com/frenzyexists/aquarium-vim/issues) for this color theme.
