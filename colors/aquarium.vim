@@ -13,8 +13,6 @@ if version > 580
 endif
 
 " --| C O N F I G U R A T I O N |--
-" Background, stuff
-set background=dark
 
 " Naming
 let colors_name = "aquarium"
@@ -22,7 +20,7 @@ let s:aquarium_vim_version="0.3.5"
 
 " Options
 let s:configuration = {}
-let s:configuration.style = get(g:, 'aquarium_style', 'dark')
+let s:configuration.style = get(g:, 'aquarium_style', &background)
 
 " Trigger bold
 if !exists("g:aqua_bold")
