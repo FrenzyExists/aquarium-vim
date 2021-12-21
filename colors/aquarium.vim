@@ -60,7 +60,6 @@ if s:configuration.style ==# 'dark'
     let s:gui0D     = "#CDDBF9"
     let s:gui0E     = "#F6BBE7"
     let s:gui0F     = "#EAC1C1"
-    let s:gui10     = "#3D4059"
 
     " OTHER
     let s:linenr_bg = s:gui07
@@ -73,7 +72,7 @@ elseif s:configuration.style ==# 'light'
     " Old BG -> #E6E6F1 #E1E3F2
     let s:gui00     = "#E6E6F1"
     let s:gui01     = "#D5D4E0"
-    let s:gui02     = "#E1E1EC"
+    let s:gui02     = "#7F8E9D"
     let s:gui03     = "#CCCBD9"
     let s:gui06     = "#9CA6B9"
     let s:gui07     = "#D7D7E2"
@@ -91,7 +90,6 @@ elseif s:configuration.style ==# 'light'
     let s:gui0D     = "#6A8CBC"
     let s:gui0E     = "#8787BF"
     let s:gui0F     = "#E06B6B"
-    let s:gui10     = "#CCCBD9"
 
     " OTHER
     let s:linenr_bg = s:gui01
@@ -243,7 +241,7 @@ call s:hi("CursorLineNr", s:linenr_fg, s:linenr_bg, "NONE", "", "NONE", "") " Ch
 
 " Tabs
 call s:hi("TabLineFill", s:gui0D, s:gui01, "NONE", "NONE", "NONE", "NONE")
-call s:hi("TabLineSel", s:gui10, s:gui0F, "NONE", "NONE", "bold", "NONE")
+call s:hi("TabLineSel", s:gui03, s:gui0F, "NONE", "NONE", "bold", "NONE")
 call s:hi("TabLine", s:gui05, s:gui00, "NONE", "NONE", "NONE", "NONE") 
 
 "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
