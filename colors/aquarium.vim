@@ -62,6 +62,7 @@ if s:configuration.style ==# 'dark'
     let s:gui0D     = "#CDDBF9"
     let s:gui0E     = "#F6BBE7"
     let s:gui0F     = "#EAC1C1"
+    let s:gui10     = "#3D4059"
 
     " OTHER
     let s:linenr_bg = s:gui07
@@ -92,6 +93,7 @@ elseif s:configuration.style ==# 'light'
     let s:gui0D     = "#6A8CBC"
     let s:gui0E     = "#8787BF"
     let s:gui0F     = "#E06B6B"
+    let s:gui10     = "#CCCBD9"
 
     " OTHER
     let s:linenr_bg = s:gui01
@@ -240,6 +242,11 @@ call s:hi("iCursor", s:cursor_bg, s:gui06, "", "NONE", "", "")
 call s:hi("LineNr", s:gui03, s:gui00, "", "", "bold", "") " The Number Columns
 call s:hi("CursorLine", "", s:line, "NONE", "", "NONE", "") " Changes the color focused line where the cursor is
 call s:hi("CursorLineNr", s:linenr_fg, s:linenr_bg, "NONE", "", "NONE", "") " Changes the color focused column number where the cursor is
+
+" Tabs
+call s:hi("TabLineFill", s:gui0D, s:gui01, "NONE", "NONE", "NONE", "NONE")
+call s:hi("TabLineSel", s:gui10, s:gui0F, "NONE", "NONE", "bold", "NONE")
+call s:hi("TabLine", s:gui05, s:gui00, "NONE", "NONE", "NONE", "NONE") 
 
 "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 "+-- Lang Specifics aka Fallbacks ---+
