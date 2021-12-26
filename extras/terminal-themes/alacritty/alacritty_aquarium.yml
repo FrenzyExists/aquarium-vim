@@ -9,17 +9,17 @@
 schemes:
   aquarium_dark: &dark
     primary:
-      background:        &aquarium_bg '#20202a'
-      foreground:        '#c8cedc'
+      background:        &aquarium_bg '#20202A'
+      foreground:        '#63718B'
       bright_foreground: '#a0a8b6'
       dim_foreground:    '#4c5664'
-    
+
     cursor:
-      cursor: '#ebe3b9'
+      cursor: '#b8dceb'
       text: '#20202a'
 
     vi_mode_cursor:
-      cursor: '#ebe3b9'
+      cursor: '#E8CCA7'
 
     bright:
       black:   '#3b3b4d'
@@ -29,17 +29,17 @@ schemes:
       blue:    '#B8C9EA'
       magenta: '#c497b3'
       cyan:    '#95C2D1'
-      white:   '#63718b'
+      white:   '#63718B'
 
     normal:
-      black:   '#3b3b4d'
+      black:   '#44495E'
       red:     '#ebb9b9'
       green:   '#caf6bb'
       yellow:  '#ebe3b9'
       blue:    '#cddbf9'
       magenta: '#f6bbe7'
       cyan:    '#b8dceb'
-      white:   '#c8cedc'  
+      white:   '#C6D0E9'
 
   aquarium_light: &light
     primary:
@@ -47,7 +47,7 @@ schemes:
       foreground:        '#708190'
       bright_foreground: '#9CA6B9'
       dim_foreground:    '#7F8E9D'
-    
+
     cursor:
       cursor: '#829FB0'
 
@@ -55,7 +55,7 @@ schemes:
       cursor: '#6A8CBC'
 
     bright:
-      black:   '#313449'
+      black:   '#414560'
       red:     '#B7435E'
       green:   '#7e8f80'
       yellow:  '#D88B72'
@@ -74,8 +74,8 @@ schemes:
       cyan:    '#829FB0'
       white:   '#D5D4E0'
 
-
-colors: 
+# Change to dark
+colors:
   *light
 
 scrolling:
@@ -101,12 +101,12 @@ font:
     style: Regular
 
   italic:
-    family: Cartograph CF 
+    family: Cartograph CF
     style: Italic
     bold:
-      family: Cartograph CF 
+      family: Cartograph CF
       style: Bold Italic
-        
+
   size: 15
   history: 10000
   offset:

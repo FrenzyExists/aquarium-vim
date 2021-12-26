@@ -49,7 +49,7 @@ function aquarium#colors#definitions()
     let l:result.linenr_fg = "#414560"
     let l:result.cursor_bg = "#AFB5C6"
   elseif l:style ==# 'mish'
-    let l:result = 
+    let l:result =
           \{
           \ 'gui00': "#292B2F",
           \ 'gui01': "#36393F",

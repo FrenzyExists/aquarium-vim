@@ -100,7 +100,7 @@ call s:hi("CursorLineNr", s:colors.linenr_fg, s:colors.linenr_bg, "NONE", "", "N
 " Tabs
 call s:hi("TabLineFill", s:colors.gui0D, s:colors.gui01, "NONE", "NONE", "NONE", "NONE")
 call s:hi("TabLineSel", s:colors.gui03, s:colors.gui0F, "NONE", "NONE", s:colors.bold, "NONE")
-call s:hi("TabLine", s:colors.gui05, s:colors.gui00, "NONE", "NONE", "NONE", "NONE") 
+call s:hi("TabLine", s:colors.gui05, s:colors.gui00, "NONE", "NONE", "NONE", "NONE")
 
 "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 "+-- Lang Specifics aka Fallbacks ---+
@@ -718,12 +718,13 @@ if has('nvim')
     " > nvim-treesitter/nvim-treesitter
     call s:hi("Constructor", s:colors.gui02, "", "", "", "", "")
     call s:hi("Emphasis", s:colors.gui02, "", "", "", "", "")
-    call s:hi("Field", s:colors.gui0B, "", "", "", "", "")
+    call s:hi("Field", s:colors.gui0E, "", "", "", "", "")
     call s:hi("FunctionBuiltin", s:colors.gui0D, "", "", "", "", "")
     call s:hi("FuncMacro", s:colors.gui0E, "", "", "", "", "")
     call s:hi("Method", s:colors.gui0B, "", "", "", "", "")
     call s:hi("Parameter", s:colors.gui09, "", "", "", "", "")
     call s:hi("TypeBuiltin", s:colors.gui0F, "", "", "", "", "")
+    call s:hi("TSTitle", s:colors.gui09, "", "", "", "", "")
     call s:hi("TreeSitterVariable", s:colors.gui0B, "", "", "", "", "")
     hi! link TSAnnotation PreProc
     hi! link TSAttribute Decorator
