@@ -84,9 +84,34 @@ let g:aquarium_style="dark"
 let g:airline_theme="base16_aquarium_light"
 ```
 
+### Outside Vim/Neovim
+
+Note: Copy the contents of the file to the respective config file of your
+favorite terminal. Always check the docs of your terminal first!
+
+#### Alacritty
+
+* [General Theme](https://github.com/FrenzyExists/aquarium-vim/blob/develop/extras/terminal-themes/alacritty/alacritty_aquarium.yml) (All three themes are in a single file)
+
+#### Kitty
+* [Dark Theme](https://github.com/FrenzyExists/aquarium-vim/blob/develop/extras/terminal-themes/kitty/kitty_aquarium_dark.conf)
+* [Light Theme](https://github.com/FrenzyExists/aquarium-vim/blob/develop/extras/terminal-themes/kitty/kitty_aquarium_light.conf)
+
+#### St
+* [Dark Theme](https://github.com/FrenzyExists/aquarium-vim/blob/develop/extras/terminal-themes/st/alacritty-dark.c)
+* [Light Theme](https://github.com/FrenzyExists/aquarium-vim/blob/develop/extras/terminal-themes/st/alacritty-light.c)
+
+#### Gnome Terminal
+* [Dark Theme](https://github.com/FrenzyExists/aquarium-vim/blob/develop/extras/terminal-themes/gnome-terminal/aquarium-dark.sh)
+* [Light Theme](https://github.com/FrenzyExists/aquarium-vim/blob/develop/extras/terminal-themes/gnome-terminal/aquarium-light.sh)
+
+#### iTerm
+* [Dark Theme](https://github.com/FrenzyExists/aquarium-vim/blob/develop/extras/terminal-themes/iterm/aquarium-dark.itermcolors)
+* [Light Theme](https://github.com/FrenzyExists/aquarium-vim/blob/develop/extras/terminal-themes/iterm/aquarium-light.itermcolors)
+
 ### Screenshots 🖼️
 
-### Theme on PikaVim
+### Theme on Neovim (with plugins)
 
 #### Aquarium-Dark
 ![](screenshots/pika_vim-dark.png)
