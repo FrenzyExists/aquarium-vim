@@ -1,0 +1,31 @@
+// Copy the following code inside the schema tab and then change the color profile to aquarium
+
+
+{
+  "background": "#20202a",
+  "black": "#1a1a24",
+  "pink": "#F093D8",
+  "brightBlack": "#2c2e3e",
+  "brightPink": "#f6bbe7",
+  "brightCyan": "#b8dceb",
+  "brightGreen": "#b1dba4",
+  "brightPurple": "#cddbf9",
+  "brightRed": "#c34864",
+  "brightWhite": "#e6e6f1",
+  "brightYellow": "#e6dfb8",
+  "cursorColor": "#d7d7e2",
+  "cyan": "#8BD0EC",
+  "foreground": "#A0ABC4",
+  "green": "#7d9685",
+  "name": "Aquarium",
+  "purple": "#8787bf",
+  "red": "#e06b6b",
+  "selectionBackground": "#313449",
+  "white": "#cccbd9",
+  "yellow": "#c8cca7"
+}
+
+
+
+
+
