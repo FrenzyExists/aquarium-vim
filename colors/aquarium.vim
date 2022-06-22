@@ -124,7 +124,7 @@ call s:hi("Float", s:colors.gui08, "", "", "", "", "") " a floating point consta
 call s:hi("Structure", s:colors.gui0A, "", "", "", "", "" ) " struct, union, enum, etc.
 call s:hi("Typedef", s:colors.gui0A, "", "", "", "", "") " A typedef
 call s:hi("Special", s:colors.gui0D, "", "", "", "", "") " any special symbol
-call s:hi("SpecialChar", s:colors.gui01, "", "", "", "", "") " special character in a constant
+call s:hi("SpecialChar", s:colors.gui0A, "", "", "", "", "") " special character in a constant
 call s:hi("Decorator", s:colors.gui0E, "", "", "", "", "")
 call s:hi("Tag", s:colors.gui0A, "", "", "", "", "") " you can use CTRL-] on this
 call s:hi("Delimiter", s:colors.gui0D, "", "", "", s:colors.bold, "") " character that needs attention, parenthesis for example
