@@ -19,6 +19,9 @@
 
 Terminal configurations are in [extras](https://github.com/FrenzyExists/aquarium-vim/tree/develop/extras) and at [my dotfiles](https://github.com/FrenzyExists/dotfiles), includes my [tmux](https://github.com/FrenzyExists/dotfiles/blob/master/config/.tmux.conf) config, partly ripped from [Hi I'm Bored](https://github.com/shaunsingh).
 
+## Ports
+- ### [Vscode](https://github.com/FrenzyExists/aquarium-vscode)
+
 ## Getting Started
 
 ### Quick Start
