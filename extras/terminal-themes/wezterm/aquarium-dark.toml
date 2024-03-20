@@ -1,0 +1,32 @@
+[colors]
+ansi = [
+  "#3b4059",
+  "#ebb9b9",
+  "#b1dba4",
+  "#e6dfb8",
+  "#cddbf9",
+  "#f6bbe7",
+  "#b8deeb",
+  "#a7b7d6",
+]
+background = "#1a1a24"
+brights = [
+  "#1a1a24",
+  "#d95e59",
+  "#8fc587",
+  "#ffcf85",
+  "#4a83c3",
+  "#bf83b5",
+  "#4eb3cd",
+  "#63718b",
+]
+cursor_bg = "#b8deeb"
+cursor_border = "#b8deeb"
+cursor_fg = "#1a1a24"
+selection_bg = "#e6dfb8"
+selection_fg = "#1a1a24"
+foreground = "#63718b"
+
+[metadata]
+author = "FrenzyExists"
+name = "Aquarium Dark"
