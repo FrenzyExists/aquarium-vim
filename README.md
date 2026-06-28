@@ -139,11 +139,11 @@ favorite terminal. Always check the docs of your terminal first!
 ![](screenshots/zathura-b.png)
 
 ## Contributing 🚧
-Aquarium is open-source, **Forever**
+Aquarium is open-source, **Forever**.
 
 You could submit a [pull request](https://github.com/frenzyexists/aquarium-vim/pulls) or a [suggestion/enchantment](https://github.com/frenzyexists/aquarium-vim/issues) for this color theme.
 
-you can also add a onfig of your favorite program using aquarium colors over [here](https://github.com/FrenzyExists/dotfiles).
+You can also add a config of your favorite program using aquarium colors over [here](https://github.com/FrenzyExists/dotfiles).
 
 <p align="center">
     <a href="https://github.com/frenzyexists/aquarium-vim/blob/main/LICENSE">
